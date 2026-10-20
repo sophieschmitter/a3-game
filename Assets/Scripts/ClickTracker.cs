@@ -19,9 +19,9 @@ public class ClickTracker : MonoBehaviour
 
     public void Update()
     {
-        // See how many clicks the player has, stored in the static
-        // variable `Clickable.Clicks`.
-        _trackingText.text = Clickable.Clicks + " pain";
+        // See how many total clicks (pain) the player has, stored in the static
+        // variable `Clickable.Pain`.
+        _trackingText.text = Clickable.Pain + " pain";
     }
 
 }

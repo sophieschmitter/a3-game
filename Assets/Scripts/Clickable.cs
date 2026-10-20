@@ -11,7 +11,10 @@ public class Clickable : MonoBehaviour
     //
     // See an example in `ClickTracker.cs`, which is on a UI
     // object titled `Tracker Text (TMP)`.
-    public static int Clicks = 0;
+    public static int Clicks = 0;        // every click ever (for Stats)
+    public static int Pain = 0;          // pain you have right now (gets spent in the shop and thus will go down, which is why it must be separated from clicks)
+    public static int TotalPain = 0;     // all pain ever made (for Stats)
+    public static int PainPerClick = 1;  // how much pain one click gives (upgrades will raise this)
 
     /// <summary>
     /// This function is called when the mouse button clicks
@@ -20,6 +23,8 @@ public class Clickable : MonoBehaviour
     private void OnMouseDown()
     {
         Clicks += 1;  // add one point
+        Pain += PainPerClick;
+        TotalPain += PainPerClick;
     }
 
 }
