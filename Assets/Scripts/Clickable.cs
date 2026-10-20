@@ -16,6 +16,39 @@ public class Clickable : MonoBehaviour
     public static int TotalPain = 0;     // all pain ever made (for Stats)
     public static int PainPerClick = 1;  // how much pain one click gives (upgrades will raise this)
 
+    // larger when hovered (1.1 = 10% larger).
+    public float hoverScale = 1.1f;
+    // smaller when pressed (0.9 = 10% smaller).
+    public float pressScale = 0.9f;
+    // How fast the button grows/shrinks, in scale units per second.
+    public float scaleSpeed = 0.5f;
+
+    private Vector3 originalScale;
+    private bool isHovered = false;
+    private bool isPressed = false;
+
+    private void Awake()
+    {
+        // Remember the size the object started with.
+        originalScale = transform.localScale;
+    }
+
+    private void Update()
+    {
+        // Pressed takes priority over hovered, which takes priority over normal.
+        Vector3 targetScale = originalScale;
+        if (isPressed)
+        {
+            targetScale = originalScale * pressScale;
+        }
+        else if (isHovered)
+        {
+            targetScale = originalScale * hoverScale;
+        }
+
+        transform.localScale = Vector3.MoveTowards(transform.localScale, targetScale, Time.deltaTime * scaleSpeed);
+    }
+
     /// <summary>
     /// This function is called when the mouse button clicks
     /// on this object.
@@ -25,6 +58,25 @@ public class Clickable : MonoBehaviour
         Clicks += 1;  // add one point
         Pain += PainPerClick;
         TotalPain += PainPerClick;
+        isPressed = true;
+    }
+
+    // release press
+    private void OnMouseUp()
+    {
+        isPressed = false;
+    }
+
+    // hover
+    private void OnMouseEnter()
+    {
+        isHovered = true;
+    }
+
+    // unhover
+    private void OnMouseExit()
+    {
+        isHovered = false;
     }
 
 }

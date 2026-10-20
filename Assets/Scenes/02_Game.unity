@@ -1596,6 +1596,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2488e8deb483d004ea828963cff8a3f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Clickable
+  hoverScale: 1.1
+  pressScale: 0.9
+  scaleSpeed: 0.5
 --- !u!58 &1737789987
 CircleCollider2D:
   m_ObjectHideFlags: 0
