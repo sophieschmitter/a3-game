@@ -15,6 +15,22 @@ public class CharacterSpawner : MonoBehaviour
     // The area where characters appear. Leave empty to use this object.
     public RectTransform spawnArea;
 
+    // Where the line starts, relative to the spawn area's center.
+    // Y is the "floor" height. X is where the first character stands.
+    public float startX = -200f;
+    public float floorY = 0;
+
+    // Horizontal gap between characters.
+    public float spacing = 60f;
+
+    // Small random vertical offset so the line looks staggered (0 = perfectly flat).
+    public float staggerY = 8f;
+
+    // When the line runs out of room, start a new row this far below.
+    public float rowHeight = 30f;
+
+    private int spawnedCount = 0;
+
     private void Awake()
     {
         // Start the tier greyed out.
@@ -27,8 +43,6 @@ public class CharacterSpawner : MonoBehaviour
     // Called by UpgradeButton each time this upgrade is bought.
     public void OnPurchased(int purchaseNumber)
     {
-    Debug.Log("OnPurchased " + purchaseNumber + " on " + name + ", tier = " + (tier == null ? "EMPTY" : tier.name));
-
         if (purchaseNumber == 1)
         {
             // First purchase: un-grey the tier.
@@ -57,12 +71,22 @@ public class CharacterSpawner : MonoBehaviour
             return;
         }
 
-        // Pick a random spot inside the spawn area.
-        Rect area = spawnArea.rect;
-        float x = Random.Range(-area.width / 2f, area.width / 2f);
-        float y = Random.Range(-area.height / 2f, area.height / 2f);
+        // How many characters fit in one row before wrapping.
+        float usableWidth = spawnArea.rect.width / 2f - startX;
+        int perRow = Mathf.Max(1, Mathf.FloorToInt(usableWidth / spacing));
+
+        int column = spawnedCount % perRow;
+        int row = spawnedCount / perRow;
+
+        float x = startX + column * spacing;
+        float y = floorY - row * rowHeight + Random.Range(-staggerY, staggerY);
 
         GameObject character = Instantiate(characterPrefab, spawnArea);
         character.GetComponent<RectTransform>().anchoredPosition = new Vector2(x, y);
+
+        // Characters further down the screen draw in front of the ones behind them.
+        character.transform.SetSiblingIndex(character.transform.parent.childCount - 1);
+
+        spawnedCount += 1;
     }
 }

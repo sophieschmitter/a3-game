@@ -687,6 +687,11 @@ MonoBehaviour:
   lockedTierColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   characterPrefab: {fileID: 185788935}
   spawnArea: {fileID: 0}
+  startX: -200
+  floorY: -50
+  spacing: 60
+  staggerY: 8
+  rowHeight: 30
 --- !u!1 &358520333
 GameObject:
   m_ObjectHideFlags: 0
@@ -1545,6 +1550,11 @@ MonoBehaviour:
   lockedTierColor: {r: 0.4, g: 0.4, b: 0.4, a: 1}
   characterPrefab: {fileID: 0}
   spawnArea: {fileID: 0}
+  startX: -200
+  floorY: -50
+  spacing: 60
+  staggerY: 8
+  rowHeight: 30
 --- !u!1 &826987503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,6 +1694,11 @@ MonoBehaviour:
   lockedTierColor: {r: 0.4, g: 0.4, b: 0.4, a: 1}
   characterPrefab: {fileID: 0}
   spawnArea: {fileID: 0}
+  startX: -200
+  floorY: -50
+  spacing: 60
+  staggerY: 8
+  rowHeight: 30
 --- !u!1 &1005285668
 GameObject:
   m_ObjectHideFlags: 0
@@ -2158,6 +2173,11 @@ MonoBehaviour:
   lockedTierColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   characterPrefab: {fileID: 0}
   spawnArea: {fileID: 0}
+  startX: -200
+  floorY: -50
+  spacing: 60
+  staggerY: 8
+  rowHeight: 30
 --- !u!1 &1234637386
 GameObject:
   m_ObjectHideFlags: 0
@@ -2897,6 +2917,11 @@ MonoBehaviour:
   lockedTierColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   characterPrefab: {fileID: 145550035}
   spawnArea: {fileID: 0}
+  startX: -200
+  floorY: -50
+  spacing: 60
+  staggerY: 8
+  rowHeight: 30
 --- !u!1 &1668575962
 GameObject:
   m_ObjectHideFlags: 0
@@ -3094,6 +3119,11 @@ MonoBehaviour:
   lockedTierColor: {r: 0.4, g: 0.4, b: 0.4, a: 1}
   characterPrefab: {fileID: 0}
   spawnArea: {fileID: 0}
+  startX: -200
+  floorY: -50
+  spacing: 60
+  staggerY: 8
+  rowHeight: 30
 --- !u!1 &1705768740
 GameObject:
   m_ObjectHideFlags: 0
@@ -3819,6 +3849,11 @@ MonoBehaviour:
   lockedTierColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   characterPrefab: {fileID: 438657384}
   spawnArea: {fileID: 0}
+  startX: -200
+  floorY: 45
+  spacing: 60
+  staggerY: 2
+  rowHeight: 30
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
