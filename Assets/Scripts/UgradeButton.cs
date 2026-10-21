@@ -16,12 +16,11 @@ public class UpgradeButton : MonoBehaviour, IPointerClickHandler
     // Image shown once unlocked.
     public Sprite unlockedSprite;
 
-    // Optional: the Image to recolor. Leave empty to use this object's own Image.
-    // If the visible picture is the child (sprite1), drag that child here.
+    // The Image this button recolors (drag the child, e.g. sprite1).
     public Image target;
 
-    // The tier this upgrade unlocks on its first purchase.
-    public Image tier;
+    // The spawner that reacts to purchases (drag floor 1 here).
+    public CharacterSpawner spawner;
 
     private Sprite originalSprite;
     private int timesPurchased = 0;
@@ -30,6 +29,11 @@ public class UpgradeButton : MonoBehaviour, IPointerClickHandler
 
     private void Awake()
     {
+        if (spawner == null)
+        {
+            spawner = GetComponent<CharacterSpawner>();
+        }
+
         if (target == null)
         {
             target = GetComponent<Image>();
@@ -54,10 +58,8 @@ public class UpgradeButton : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    // Replaces OnMouseDown for UI objects.
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("Clicked: " + upgradeName + " (cost " + cost + ")");
         if (!IsUnlocked)
         {
             return;
@@ -66,16 +68,13 @@ public class UpgradeButton : MonoBehaviour, IPointerClickHandler
         Clickable.Pain -= cost;
         timesPurchased += 1;
 
-        if (timesPurchased == 1)
+        if (spawner != null)
         {
-            if (tier != null)
-            {
-                tier.color = Color.white;
-            }
+            spawner.OnPurchased(timesPurchased);
         }
         else
         {
-            Debug.Log(upgradeName + " purchased again");
+            Debug.LogWarning(upgradeName + ": no Spawner assigned.");
         }
     }
 }

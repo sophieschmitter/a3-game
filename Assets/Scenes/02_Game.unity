@@ -591,6 +591,7 @@ GameObject:
   - component: {fileID: 253104849}
   - component: {fileID: 253104848}
   - component: {fileID: 253104847}
+  - component: {fileID: 253104850}
   m_Layer: 5
   m_Name: ' Floor 3 - Dungeon'
   m_TagString: Untagged
@@ -670,6 +671,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 253104845}
   m_CullTransparentMesh: 1
+--- !u!114 &253104850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253104845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 585a30a47c7934b1d8ce9054c9bcd008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterSpawner
+  tier: {fileID: 253104848}
+  lockedTierColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  characterPrefab: {fileID: 185788935}
+  spawnArea: {fileID: 0}
 --- !u!1 &358520333
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,7 +1362,7 @@ MonoBehaviour:
   lockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   unlockedSprite: {fileID: 0}
   target: {fileID: 589914414}
-  tier: {fileID: 0}
+  spawner: {fileID: 1666627861}
 --- !u!1 &797663860
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,6 +1450,7 @@ GameObject:
   - component: {fileID: 804627697}
   - component: {fileID: 804627696}
   - component: {fileID: 804627695}
+  - component: {fileID: 804627698}
   m_Layer: 5
   m_Name: Floor 7
   m_TagString: Untagged
@@ -1511,6 +1529,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804627693}
   m_CullTransparentMesh: 1
+--- !u!114 &804627698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804627693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 585a30a47c7934b1d8ce9054c9bcd008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterSpawner
+  tier: {fileID: 0}
+  lockedTierColor: {r: 0.4, g: 0.4, b: 0.4, a: 1}
+  characterPrefab: {fileID: 0}
+  spawnArea: {fileID: 0}
 --- !u!1 &826987503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1554,6 +1588,7 @@ GameObject:
   - component: {fileID: 942008215}
   - component: {fileID: 942008214}
   - component: {fileID: 942008213}
+  - component: {fileID: 942008216}
   m_Layer: 5
   m_Name: Floor 5 - Santa's Special
   m_TagString: Untagged
@@ -1633,6 +1668,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 942008211}
   m_CullTransparentMesh: 1
+--- !u!114 &942008216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942008211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 585a30a47c7934b1d8ce9054c9bcd008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterSpawner
+  tier: {fileID: 0}
+  lockedTierColor: {r: 0.4, g: 0.4, b: 0.4, a: 1}
+  characterPrefab: {fileID: 0}
+  spawnArea: {fileID: 0}
 --- !u!1 &1005285668
 GameObject:
   m_ObjectHideFlags: 0
@@ -2011,6 +2062,7 @@ GameObject:
   - component: {fileID: 1169704816}
   - component: {fileID: 1169704815}
   - component: {fileID: 1169704814}
+  - component: {fileID: 1169704817}
   m_Layer: 5
   m_Name: Floor 4 - Mordor
   m_TagString: Untagged
@@ -2090,6 +2142,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1169704812}
   m_CullTransparentMesh: 1
+--- !u!114 &1169704817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169704812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 585a30a47c7934b1d8ce9054c9bcd008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterSpawner
+  tier: {fileID: 0}
+  lockedTierColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  characterPrefab: {fileID: 0}
+  spawnArea: {fileID: 0}
 --- !u!1 &1234637386
 GameObject:
   m_ObjectHideFlags: 0
@@ -2292,7 +2360,7 @@ MonoBehaviour:
   lockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   unlockedSprite: {fileID: 0}
   target: {fileID: 1571071313}
-  tier: {fileID: 0}
+  spawner: {fileID: 253104850}
 --- !u!1 &1347516251
 GameObject:
   m_ObjectHideFlags: 0
@@ -2387,7 +2455,7 @@ MonoBehaviour:
   lockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   unlockedSprite: {fileID: 0}
   target: {fileID: 797663862}
-  tier: {fileID: 0}
+  spawner: {fileID: 2146070123}
 --- !u!1 &1401788501
 GameObject:
   m_ObjectHideFlags: 0
@@ -2733,6 +2801,7 @@ GameObject:
   - component: {fileID: 1666627860}
   - component: {fileID: 1666627859}
   - component: {fileID: 1666627858}
+  - component: {fileID: 1666627861}
   m_Layer: 5
   m_Name: Floor 2 - Bamboo
   m_TagString: Untagged
@@ -2812,6 +2881,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1666627856}
   m_CullTransparentMesh: 1
+--- !u!114 &1666627861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666627856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 585a30a47c7934b1d8ce9054c9bcd008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterSpawner
+  tier: {fileID: 1666627859}
+  lockedTierColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  characterPrefab: {fileID: 145550035}
+  spawnArea: {fileID: 0}
 --- !u!1 &1668575962
 GameObject:
   m_ObjectHideFlags: 0
@@ -2914,6 +2999,7 @@ GameObject:
   - component: {fileID: 1694770705}
   - component: {fileID: 1694770704}
   - component: {fileID: 1694770703}
+  - component: {fileID: 1694770706}
   m_Layer: 5
   m_Name: Floor 6
   m_TagString: Untagged
@@ -2992,6 +3078,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1694770701}
   m_CullTransparentMesh: 1
+--- !u!114 &1694770706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694770701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 585a30a47c7934b1d8ce9054c9bcd008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterSpawner
+  tier: {fileID: 0}
+  lockedTierColor: {r: 0.4, g: 0.4, b: 0.4, a: 1}
+  characterPrefab: {fileID: 0}
+  spawnArea: {fileID: 0}
 --- !u!1 &1705768740
 GameObject:
   m_ObjectHideFlags: 0
@@ -3621,6 +3723,7 @@ GameObject:
   - component: {fileID: 2146070122}
   - component: {fileID: 2146070121}
   - component: {fileID: 2146070120}
+  - component: {fileID: 2146070123}
   m_Layer: 5
   m_Name: Floor 1
   m_TagString: Untagged
@@ -3700,6 +3803,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146070118}
   m_CullTransparentMesh: 1
+--- !u!114 &2146070123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146070118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 585a30a47c7934b1d8ce9054c9bcd008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterSpawner
+  tier: {fileID: 2146070121}
+  lockedTierColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  characterPrefab: {fileID: 438657384}
+  spawnArea: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
