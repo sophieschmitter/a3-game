@@ -352,7 +352,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 705300221}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.5543739
+  m_Size: 0.48989397
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -688,9 +688,9 @@ MonoBehaviour:
   characterPrefab: {fileID: 185788935}
   spawnArea: {fileID: 0}
   startX: -200
-  floorY: -50
+  floorY: 35
   spacing: 60
-  staggerY: 8
+  staggerY: 2
   rowHeight: 30
 --- !u!1 &358520333
 GameObject:
@@ -2918,9 +2918,9 @@ MonoBehaviour:
   characterPrefab: {fileID: 145550035}
   spawnArea: {fileID: 0}
   startX: -200
-  floorY: -50
+  floorY: 55
   spacing: 60
-  staggerY: 8
+  staggerY: 2
   rowHeight: 30
 --- !u!1 &1668575962
 GameObject:
