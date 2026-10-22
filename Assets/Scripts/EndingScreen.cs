@@ -6,7 +6,7 @@ using TMPro;
 
 public class EndingScreen : MonoBehaviour, IPointerClickHandler
 {
-    // The final upgrade. The ending plays the first time it's bought.
+    // The final upgrade (the 11th one). The ending plays the first time it's bought.
     public UpgradeButton finalUpgrade;
 
     // The text object the message appears in.
@@ -30,6 +30,9 @@ public class EndingScreen : MonoBehaviour, IPointerClickHandler
     public float fadeTime = 2f;             // how long the screen takes to fade in/out
     public float lineDelay = 1.5f;          // pause between lines
 
+    [Header("Debug")]
+    public bool logDebug = true;            // untick once the ending works
+
     private CanvasGroup group;
     private bool started = false;
     private bool canClose = false;
@@ -42,10 +45,31 @@ public class EndingScreen : MonoBehaviour, IPointerClickHandler
         endingText.text = "";
     }
 
+    private void Start()
+    {
+        if (!logDebug) return;
+
+        if (finalUpgrade == null)
+        {
+            Debug.LogWarning("EndingScreen: Final Upgrade slot is empty.");
+        }
+        else
+        {
+            Debug.Log("EndingScreen: watching '" + finalUpgrade.name +
+                      "'. If that is not your 11th upgrade, drag the right button into Final Upgrade.");
+        }
+    }
+
     private void Update()
     {
-        if (!started && finalUpgrade != null && finalUpgrade.HasBeenBought)
+        if (started || finalUpgrade == null) return;
+
+        if (finalUpgrade.HasBeenBought)
         {
+            if (logDebug)
+            {
+                Debug.Log("EndingScreen: starting because '" + finalUpgrade.name + "' was bought.");
+            }
             started = true;
             StartCoroutine(PlayEnding());
         }
