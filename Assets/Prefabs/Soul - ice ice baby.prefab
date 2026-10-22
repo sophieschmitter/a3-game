@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5423311274477903199, guid: 301b67a8270454ed3ba42b3431acbe1a, type: 3}
+  m_Sprite: {fileID: 713224541261936136, guid: 78be031d3ec8741e48800b03e2c27176, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -90,8 +90,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoulBreathing
   frames:
-  - {fileID: 5423311274477903199, guid: 301b67a8270454ed3ba42b3431acbe1a, type: 3}
-  - {fileID: 5005280394573251276, guid: 301b67a8270454ed3ba42b3431acbe1a, type: 3}
+  - {fileID: 713224541261936136, guid: 78be031d3ec8741e48800b03e2c27176, type: 3}
+  - {fileID: -7993600148167268795, guid: 78be031d3ec8741e48800b03e2c27176, type: 3}
   secondsPerFrame: 0.5
 --- !u!114 &-2138852989208647172
 MonoBehaviour:

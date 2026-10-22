@@ -1,82 +1,98 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Clickable : MonoBehaviour
 {
-
     // This variable is marked as `static`, which means it is
-    // accessible by any script, anywhere! They can just write
-    // Clickable.Clicks to read/write to this value.
-    //
-    // See an example in `ClickTracker.cs`, which is on a UI
-    // object titled `Tracker Text (TMP)`.
+    // accessible by any script, anywhere!
     public static int Clicks = 0;        // every click ever (for Stats)
-    public static int Pain = 0;          // pain you have right now (gets spent in the shop and thus will go down, which is why it must be separated from clicks)
+    public static int Pain = 0;          // pain you have right now (gets spent in the shop)
     public static int TotalPain = 0;     // all pain ever made (for Stats)
     public static int PainPerClick = 1;  // how much pain one click gives (upgrades will raise this)
 
-    // larger when hovered (1.1 = 10% larger).
-    public float hoverScale = 1.1f;
-    // smaller when pressed (0.9 = 10% smaller).
-    public float pressScale = 0.9f;
-    // How fast the button grows/shrinks, in scale units per second.
-    public float scaleSpeed = 0.5f;
+    [Header("Button pictures")]
+    public Sprite normalSprite;    // regular button
+    public Sprite hoverSprite;     // regular + yellow ring
+    public Sprite pressedSprite;   // pushed down + yellow ring
 
+    [Header("Feel")]
+    // larger when hovered (1.03 = 3% larger).
+    public float hoverScale = 1.03f;
+    // smaller when pressed (0.97 = 3% smaller).
+    public float pressScale = 0.97f;
+    // How fast the button grows/shrinks.
+    public float scaleSpeed = 10f;
+    // The pushed-down picture shows for at least this long, even on a super-quick click.
+    public float minPressTime = 0.08f;
+
+    private SpriteRenderer spriteRenderer;
     private Vector3 originalScale;
     private bool isHovered = false;
-    private bool isPressed = false;
+    private bool isHeld = false;
+    private float pressTimer = 0f;
 
     private void Awake()
     {
-        // Remember the size the object started with.
+        spriteRenderer = GetComponent<SpriteRenderer>();
         originalScale = transform.localScale;
     }
 
     private void Update()
     {
-        // Pressed takes priority over hovered, which takes priority over normal.
+        // Count down the "keep showing pressed" timer.
+        if (pressTimer > 0f) pressTimer -= Time.deltaTime;
+
+        bool showPressed = isHeld || pressTimer > 0f;
+
+        // Pick the picture.
+        Sprite wanted = normalSprite;
+        if (showPressed) wanted = pressedSprite;
+        else if (isHovered) wanted = hoverSprite;
+        if (wanted != null) spriteRenderer.sprite = wanted;
+
+        // Pick the size.
         Vector3 targetScale = originalScale;
-        if (isPressed)
-        {
-            targetScale = originalScale * pressScale;
-        }
-        else if (isHovered)
-        {
-            targetScale = originalScale * hoverScale;
-        }
+        if (showPressed) targetScale = originalScale * pressScale;
+        else if (isHovered) targetScale = originalScale * hoverScale;
 
         transform.localScale = Vector3.MoveTowards(transform.localScale, targetScale, Time.deltaTime * scaleSpeed);
     }
 
-    /// <summary>
-    /// This function is called when the mouse button clicks
-    /// on this object.
-    /// </summary>
+    // True when the mouse is on top of a UI thing (shop, hotel, buttons...).
+    private bool MouseIsOverUI()
+    {
+        return EventSystem.current != null && EventSystem.current.IsPointerOverGameObject();
+    }
+
+    // Called when the mouse button clicks on this object.
     private void OnMouseDown()
     {
-        Clicks += 1;  // add one point
+        if (MouseIsOverUI()) return;   // the click was meant for the UI, not us
+
+        Clicks += 1;
         Pain += PainPerClick;
         TotalPain += PainPerClick;
-        isPressed = true;
+
+        isHeld = true;
+        pressTimer = minPressTime;
+        transform.localScale = originalScale * pressScale;   // snap down instantly for a punchy feel
     }
 
-    // release press
+    // Mouse button released.
     private void OnMouseUp()
     {
-        isPressed = false;
+        isHeld = false;
     }
 
-    // hover
-    private void OnMouseEnter()
+    // Runs every frame while the mouse is over this object.
+    private void OnMouseOver()
     {
-        isHovered = true;
+        isHovered = !MouseIsOverUI();
     }
 
-    // unhover
+    // Mouse left the button.
     private void OnMouseExit()
     {
         isHovered = false;
     }
-
 }
