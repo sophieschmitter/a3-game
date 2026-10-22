@@ -72,6 +72,10 @@ public class CharacterSpawner : MonoBehaviour
 
         // Every purchase (including the first) adds a soul.
         SpawnCharacter();
+
+        // Unlock this room's next lore entry, if it has a log.
+        RoomLog log = GetComponent<RoomLog>();
+        if (log != null) log.OnPurchased(purchaseNumber);
     }
 
     private IEnumerator ScrollHotelToHere()
