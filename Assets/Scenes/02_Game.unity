@@ -1609,6 +1609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeButton
   upgradeName: Upgrade
   requires: {fileID: 694215122}
+  needsAllRoomsBought: 0
   cost: 50
   priceGrowth: 1.15
   lockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
@@ -2938,6 +2939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeButton
   upgradeName: Upgrade
   requires: {fileID: 315439417}
+  needsAllRoomsBought: 2
   cost: 50
   priceGrowth: 1.15
   lockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
@@ -4695,6 +4697,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeButton
   upgradeName: Upgrade
   requires: {fileID: 744793124}
+  needsAllRoomsBought: 0
   cost: 50
   priceGrowth: 1.15
   lockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
@@ -4972,6 +4975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeButton
   upgradeName: Upgrade
   requires: {fileID: 890051102}
+  needsAllRoomsBought: 0
   cost: 50
   priceGrowth: 1.15
   lockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
@@ -5131,6 +5135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeButton
   upgradeName: Upgrade
   requires: {fileID: 1347516255}
+  needsAllRoomsBought: 0
   cost: 10
   priceGrowth: 1.15
   lockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
@@ -6407,6 +6412,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeButton
   upgradeName: Upgrade
   requires: {fileID: 1619951445}
+  needsAllRoomsBought: 0
   cost: 50
   priceGrowth: 1.15
   lockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
@@ -8903,6 +8909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeButton
   upgradeName: Upgrade
   requires: {fileID: 1327082952}
+  needsAllRoomsBought: 0
   cost: 20
   priceGrowth: 1.15
   lockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
@@ -9302,6 +9309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeButton
   upgradeName: Upgrade
   requires: {fileID: 763273380}
+  needsAllRoomsBought: 0
   cost: 15
   priceGrowth: 1.15
   lockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
@@ -9423,6 +9431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeButton
   upgradeName: Upgrade
   requires: {fileID: 0}
+  needsAllRoomsBought: 0
   cost: 5
   priceGrowth: 1.15
   lockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
@@ -10777,6 +10786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeButton
   upgradeName: Upgrade
   requires: {fileID: 1245713038}
+  needsAllRoomsBought: 0
   cost: 20
   priceGrowth: 1.15
   lockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
@@ -11064,6 +11074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeButton
   upgradeName: Upgrade
   requires: {fileID: 1607662675}
+  needsAllRoomsBought: 0
   cost: 50
   priceGrowth: 1.15
   lockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
