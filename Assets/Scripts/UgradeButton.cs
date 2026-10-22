@@ -19,13 +19,14 @@ public class UpgradeButton : MonoBehaviour, IPointerClickHandler
     // The Image this button recolors (drag the child, e.g. sprite1).
     public Image target;
 
-    // The spawner that reacts to purchases (drag floor 1 here).
+    // The spawner that reacts to purchases (drag the floor here).
     public CharacterSpawner spawner;
 
     private Sprite originalSprite;
     private int timesPurchased = 0;
 
-    private bool IsUnlocked => Clickable.Pain >= cost;
+    // Public so UpgradeTooltip can read it.
+    public bool IsUnlocked => Clickable.Pain >= cost;
 
     private void Awake()
     {
