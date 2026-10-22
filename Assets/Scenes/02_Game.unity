@@ -352,7 +352,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 705300221}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.3823022
+  m_Size: 0.4151101
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4127,10 +4127,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Clickable
   normalSprite: {fileID: 1927880884643011424, guid: e9a71c5dd737a4a02803c45ca6cc08c8, type: 3}
-  hoverSprite: {fileID: -68542958851625989, guid: e9a71c5dd737a4a02803c45ca6cc08c8, type: 3}
-  pressedSprite: {fileID: 5211671375781904973, guid: e9a71c5dd737a4a02803c45ca6cc08c8, type: 3}
-  hoverScale: 1.03
-  pressScale: 0.97
+  hoverSprite: {fileID: 1927880884643011424, guid: e9a71c5dd737a4a02803c45ca6cc08c8, type: 3}
+  pressedSprite: {fileID: -735536768852083220, guid: e9a71c5dd737a4a02803c45ca6cc08c8, type: 3}
+  hoverScale: 1.1
+  pressScale: 1.02
   scaleSpeed: 1
   minPressTime: 0.08
 --- !u!58 &1737789987
