@@ -427,8 +427,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 705300222}
   m_HandleRect: {fileID: 705300221}
   m_Direction: 2
-  m_Value: 0.9999999
-  m_Size: 0.3742741
+  m_Value: 1
+  m_Size: 0.41576573
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -584,98 +584,6 @@ MonoBehaviour:
   spacing: 60
   staggerY: 2
   rowHeight: 30
---- !u!1 &289801152
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 289801153}
-  - component: {fileID: 289801156}
-  - component: {fileID: 289801155}
-  - component: {fileID: 289801154}
-  m_Layer: 5
-  m_Name: Soul - cannon fodder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &289801153
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 289801152}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1852015787}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 120, y: 120}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &289801154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 289801152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a99bacd17f13491a9517feb32c9527c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SoulBreathing
-  frames:
-  - {fileID: -6837629284723938887, guid: dad41b16221d3426aa600361bab9b717, type: 3}
-  - {fileID: 7715225652175198115, guid: dad41b16221d3426aa600361bab9b717, type: 3}
-  secondsPerFrame: 0.5
---- !u!114 &289801155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 289801152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -1055910758, guid: dad41b16221d3426aa600361bab9b717, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &289801156
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 289801152}
-  m_CullTransparentMesh: 1
 --- !u!1 &322528925
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,9 +929,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 585a30a47c7934b1d8ce9054c9bcd008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterSpawner
-  tier: {fileID: 0}
+  tier: {fileID: 426540639}
   lockedTierColor: {r: 0.4, g: 0.4, b: 0.4, a: 1}
-  characterPrefab: {fileID: 0}
+  characterPrefab: {fileID: 2566908836954396144, guid: a7d7f9c68943c404289be8bfe3844fdd, type: 3}
   spawnArea: {fileID: 0}
   startX: -200
   floorY: -50
@@ -1125,7 +1033,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00012207031}
+  m_AnchoredPosition: {x: 0, y: -0.00012207031}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &431209208
@@ -2366,7 +2274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 585a30a47c7934b1d8ce9054c9bcd008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterSpawner
-  tier: {fileID: 0}
+  tier: {fileID: 942008214}
   lockedTierColor: {r: 0.4, g: 0.4, b: 0.4, a: 1}
   characterPrefab: {fileID: 7874207143111047461, guid: a8e3fc9347fde4ee989303ca9f2d38a1, type: 3}
   spawnArea: {fileID: 0}
@@ -4128,7 +4036,7 @@ MonoBehaviour:
   lockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   unlockedSprite: {fileID: 0}
   target: {fileID: 322528927}
-  spawner: {fileID: 1169704817}
+  spawner: {fileID: 942008216}
 --- !u!114 &1607662676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5441,8 +5349,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 289801153}
+  m_Children: []
   m_Father: {fileID: 426540636}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

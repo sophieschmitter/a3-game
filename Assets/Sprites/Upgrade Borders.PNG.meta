@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 68c0196dad82e487ea38d19b67770b50
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2477382040037916023
+    second: Upgrade Borders_0
+  - first:
+      213: 7787270890611944774
+    second: Upgrade Borders_1
+  - first:
+      213: -5461953959372348990
+    second: Upgrade Borders_2
+  - first:
+      213: -708054681536186587
+    second: Upgrade Borders_3
+  - first:
+      213: 6600107352719799689
+    second: Upgrade Borders_4
+  - first:
+      213: -6247879692462020452
+    second: Upgrade Borders_5
+  - first:
+      213: -407515400797569200
+    second: Upgrade Borders_6
+  - first:
+      213: 922475565550297712
+    second: Upgrade Borders_7
+  - first:
+      213: -2111341227379695684
+    second: Upgrade Borders_8
+  - first:
+      213: -2282764274571179939
+    second: Upgrade Borders_9
+  - first:
+      213: 1748284863852305862
+    second: Upgrade Borders_10
+  - first:
+      213: -204072596816088884
+    second: Upgrade Borders_11
+  - first:
+      213: 9010591814348184138
+    second: Upgrade Borders_12
+  - first:
+      213: -5705296614934127918
+    second: Upgrade Borders_13
+  - first:
+      213: -3412477330042528259
+    second: Upgrade Borders_14
+  - first:
+      213: -1139055620649948028
+    second: Upgrade Borders_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Upgrade Borders_0
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1484
+        width: 392
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d7465f6dd616220800000000000000
+      internalID: 2477382040037916023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Upgrade Borders_1
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1484
+        width: 392
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d2aa4cd91f11c60800000000000000
+      internalID: 7787270890611944774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Upgrade Borders_2
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 1484
+        width: 392
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c1a21800dd3334b0800000000000000
+      internalID: -5461953959372348990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Upgrade Borders_3
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 1484
+        width: 392
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 527bb71c40c7c26f0800000000000000
+      internalID: -708054681536186587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Upgrade Borders_4
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1004
+        width: 392
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 985be4e1baa489b50800000000000000
+      internalID: 6600107352719799689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Upgrade Borders_5
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1004
+        width: 392
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c98ac6bb5821b49a0800000000000000
+      internalID: -6247879692462020452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Upgrade Borders_6
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 1004
+        width: 392
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05fb5fee6e6385af0800000000000000
+      internalID: -407515400797569200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Upgrade Borders_7
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 1004
+        width: 392
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0726a9ea3aa4dcc00800000000000000
+      internalID: 922475565550297712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Upgrade Borders_8
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 524
+        width: 392
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf556e075203b2e0800000000000000
+      internalID: -2111341227379695684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Upgrade Borders_9
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 524
+        width: 392
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d588b34acfdf150e0800000000000000
+      internalID: -2282764274571179939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Upgrade Borders_10
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 524
+        width: 392
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cddb1422d7234810800000000000000
+      internalID: 1748284863852305862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Upgrade Borders_11
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 524
+        width: 392
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0b26eed0dfa2df0800000000000000
+      internalID: -204072596816088884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Upgrade Borders_12
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 44
+        width: 392
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a1446d38d0c0d70800000000000000
+      internalID: 9010591814348184138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Upgrade Borders_13
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 44
+        width: 392
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dadc98e4f6b2d0b0800000000000000
+      internalID: -5705296614934127918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Upgrade Borders_14
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 44
+        width: 392
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfdddbac2f174a0d0800000000000000
+      internalID: -3412477330042528259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Upgrade Borders_15
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 44
+        width: 392
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48c6fbfa2f24130f0800000000000000
+      internalID: -1139055620649948028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Upgrade Borders_0: 2477382040037916023
+      Upgrade Borders_1: 7787270890611944774
+      Upgrade Borders_10: 1748284863852305862
+      Upgrade Borders_11: -204072596816088884
+      Upgrade Borders_12: 9010591814348184138
+      Upgrade Borders_13: -5705296614934127918
+      Upgrade Borders_14: -3412477330042528259
+      Upgrade Borders_15: -1139055620649948028
+      Upgrade Borders_2: -5461953959372348990
+      Upgrade Borders_3: -708054681536186587
+      Upgrade Borders_4: 6600107352719799689
+      Upgrade Borders_5: -6247879692462020452
+      Upgrade Borders_6: -407515400797569200
+      Upgrade Borders_7: 922475565550297712
+      Upgrade Borders_8: -2111341227379695684
+      Upgrade Borders_9: -2282764274571179939
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
