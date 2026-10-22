@@ -3,10 +3,13 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
 
-public class UpgradeButton : MonoBehaviour, IPointerClickHandler
+public class UpgradeButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     // Name shown in Console messages. Set it per button.
     public string upgradeName = "Upgrade";
+
+    // The upgrade that must be bought before this one. Leave empty for the first one.
+    public UpgradeButton requires;
 
     // Pain needed for the NEXT purchase. Goes up every time you buy.
     public int cost = 100;
@@ -29,11 +32,25 @@ public class UpgradeButton : MonoBehaviour, IPointerClickHandler
     // Optional: small text on the button showing the price and souls owned.
     public TMP_Text priceText;
 
-    private Sprite originalSprite;
-    private int timesPurchased = 0;
+    [Header("Frame")]
+    // The tile's border picture. Leave empty to use this button's own Image.
+    public Image frame;
+    // The glowing border, shown while hovering an upgrade you can afford.
+    public Sprite frameHoverSprite;
 
-    // True when the player has enough pain to buy this.
-    public bool IsUnlocked => Clickable.Pain >= cost;
+    private Sprite originalSprite;
+    private Sprite frameNormalSprite;
+    private int timesPurchased = 0;
+    private bool isHovered = false;
+
+    // True once this upgrade has been bought at least once.
+    public bool HasBeenBought => timesPurchased > 0;
+
+    // True when the previous upgrade has been bought (or there isn't one).
+    public bool IsAvailable => requires == null || requires.HasBeenBought;
+
+    // True when the player can buy this right now: available AND affordable.
+    public bool IsUnlocked => IsAvailable && Clickable.Pain >= cost;
 
     private void Awake()
     {
@@ -47,6 +64,13 @@ public class UpgradeButton : MonoBehaviour, IPointerClickHandler
             target = GetComponent<Image>();
         }
         originalSprite = target.sprite;
+
+        if (frame == null)
+        {
+            frame = GetComponent<Image>();
+        }
+        // Remember the normal border (whatever is in the frame's Source Image).
+        frameNormalSprite = frame.sprite;
     }
 
     private void Update()
@@ -65,23 +89,51 @@ public class UpgradeButton : MonoBehaviour, IPointerClickHandler
             target.color = lockedColor;
         }
 
+        UpdateFrame();
         UpdatePriceText();
+    }
+
+    private void UpdateFrame()
+    {
+        if (frame == null || frame == target) return;
+
+        // Glow only while hovering AND buyable.
+        bool glow = isHovered && IsUnlocked && frameHoverSprite != null;
+        frame.sprite = glow ? frameHoverSprite : frameNormalSprite;
+
+        // Grey the frame too when you can't buy it.
+        frame.color = IsUnlocked ? Color.white : lockedColor;
     }
 
     private void UpdatePriceText()
     {
         if (priceText == null) return;
 
-        if (timesPurchased == 0)
+        if (!IsAvailable)
         {
-            // Not bought yet: the first purchase unlocks the room.
+            // The previous upgrade hasn't been bought yet.
+            priceText.text = "Locked";
+        }
+        else if (timesPurchased == 0)
+        {
+            // Not bought yet: the first purchase unlocks the room and its first soul.
             priceText.text = "Unlock\n" + cost + " pain";
         }
         else
         {
-            // The first purchase only unlocked the room, so souls = purchases - 1.
-            priceText.text = cost + " pain\n" + (timesPurchased - 1) + " souls";
+            // Every purchase adds one soul, so souls = purchases.
+            priceText.text = cost + " pain\n" + timesPurchased + " souls";
         }
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        isHovered = true;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        isHovered = false;
     }
 
     public void OnPointerClick(PointerEventData eventData)
