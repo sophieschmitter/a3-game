@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -30,6 +31,9 @@ public class CharacterSpawner : MonoBehaviour
     // Most souls shown in this room. Extra souls still earn pain, they're just hidden.
     public int maxVisibleSouls = 15;
 
+    // How long the hotel takes to scroll to this floor when it opens (seconds).
+    public float scrollTime = 0.6f;
+
     private int spawnedCount = 0;
 
     private void Awake()
@@ -61,10 +65,45 @@ public class CharacterSpawner : MonoBehaviour
             {
                 construction.SetActive(false);
             }
+
+            // Show the player their new floor.
+            StartCoroutine(ScrollHotelToHere());
         }
 
         // Every purchase (including the first) adds a soul.
         SpawnCharacter();
+    }
+
+    private IEnumerator ScrollHotelToHere()
+    {
+        // The hotel's scroll area is somewhere above this floor in the Hierarchy.
+        ScrollRect scroll = GetComponentInParent<ScrollRect>();
+        if (scroll == null) yield break;
+
+        RectTransform content = scroll.content;
+        RectTransform viewport = scroll.viewport != null ? scroll.viewport : (RectTransform)scroll.transform;
+        RectTransform me = (RectTransform)transform;
+
+        float scrollable = content.rect.height - viewport.rect.height;
+        if (scrollable <= 0f) yield break;   // everything already fits on screen
+
+        // How far down from the top of the hotel this floor's middle is.
+        Vector3 myCenter = me.TransformPoint(me.rect.center);
+        float fromTop = content.rect.yMax - content.InverseTransformPoint(myCenter).y;
+
+        // Scroll so this floor sits in the middle of the view.
+        float offset = Mathf.Clamp(fromTop - viewport.rect.height / 2f, 0f, scrollable);
+        float target = 1f - offset / scrollable;   // 1 = top of the hotel, 0 = bottom
+
+        scroll.velocity = Vector2.zero;
+        float start = scroll.verticalNormalizedPosition;
+        float t = 0f;
+        while (t < 1f)
+        {
+            t += Time.deltaTime / scrollTime;
+            scroll.verticalNormalizedPosition = Mathf.Lerp(start, target, Mathf.SmoothStep(0f, 1f, t));
+            yield return null;   // wait one frame, then continue
+        }
     }
 
     private void SpawnCharacter()

@@ -90,8 +90,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoulBreathing
   frames:
-  - {fileID: -6837629284723938887, guid: dad41b16221d3426aa600361bab9b717, type: 3}
-  - {fileID: 7715225652175198115, guid: dad41b16221d3426aa600361bab9b717, type: 3}
+  - {fileID: 7474915535779292914, guid: dad41b16221d3426aa600361bab9b717, type: 3}
+  - {fileID: -1055910758, guid: dad41b16221d3426aa600361bab9b717, type: 3}
   secondsPerFrame: 0.5
 --- !u!114 &1441930115729503162
 MonoBehaviour:

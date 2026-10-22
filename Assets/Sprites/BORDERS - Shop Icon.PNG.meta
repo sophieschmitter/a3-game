@@ -5,6 +5,21 @@ TextureImporter:
   - first:
       213: -2954657674827110575
     second: BORDERS - Shop Icon_0
+  - first:
+      213: -2478709548879426806
+    second: BORDERS - Shop Icon_1
+  - first:
+      213: -2135405079367569667
+    second: BORDERS - Shop Icon_2
+  - first:
+      213: -7759339627428272881
+    second: BORDERS - Shop Icon_3
+  - first:
+      213: 6674513857594546137
+    second: BORDERS - Shop Icon_4
+  - first:
+      213: -698323422963278729
+    second: BORDERS - Shop Icon_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -104,9 +119,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1441
-        height: 960
+        y: 1439
+        width: 481
+        height: 481
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,6 +132,116 @@ TextureImporter:
       bones: []
       spriteID: 1576c0bcf72fef6d0800000000000000
       internalID: -2954657674827110575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDERS - Shop Icon_1
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1439
+        width: 482
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b4cad4ccad99dd0800000000000000
+      internalID: -2478709548879426806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDERS - Shop Icon_2
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1439
+        width: 482
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfe2bb8e4648d52e0800000000000000
+      internalID: -2135405079367569667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDERS - Shop Icon_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 914
+        width: 481
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f05a68738b9415490800000000000000
+      internalID: -7759339627428272881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDERS - Shop Icon_4
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 914
+        width: 482
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d7585a8df2a0ac50800000000000000
+      internalID: 6674513857594546137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDERS - Shop Icon_5
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 914
+        width: 482
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77c50f3fb8e0f46f0800000000000000
+      internalID: -698323422963278729
       vertices: []
       indices: 
       edges: []
@@ -136,6 +261,11 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       BORDERS - Shop Icon_0: -2954657674827110575
+      BORDERS - Shop Icon_1: -2478709548879426806
+      BORDERS - Shop Icon_2: -2135405079367569667
+      BORDERS - Shop Icon_3: -7759339627428272881
+      BORDERS - Shop Icon_4: 6674513857594546137
+      BORDERS - Shop Icon_5: -698323422963278729
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
