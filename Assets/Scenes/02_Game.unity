@@ -3206,6 +3206,65 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 62}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &738655191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 738655193}
+  - component: {fileID: 738655192}
+  m_Layer: 0
+  m_Name: ScreamChoir
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &738655192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738655191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0307d6b446d5543e099ea34dad663b96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScreamChoir
+  screams:
+  - {fileID: 8300000, guid: 5b20845b5c9ac4f17b07d5215fcfadf8, type: 3}
+  - {fileID: 8300000, guid: 075519cee08154f39bff1dc552ded9fd, type: 3}
+  - {fileID: 8300000, guid: 20a4dc2623ee74450922d60c92ba0935, type: 3}
+  - {fileID: 8300000, guid: a74297b9cefd14aa28ce4b5441a76df2, type: 3}
+  - {fileID: 8300000, guid: e0b7e9ede64ca4da1a43a8f485b248eb, type: 3}
+  - {fileID: 8300000, guid: 1246ea2376f5f4185b84d4f683779b4b, type: 3}
+  - {fileID: 8300000, guid: ded3ff92bdec1487490267b97dfdee3e, type: 3}
+  - {fileID: 8300000, guid: df4485062417842a6b9756798335213d, type: 3}
+  - {fileID: 8300000, guid: 8007f37848c17496390eeb642ec1f047, type: 3}
+  - {fileID: 8300000, guid: 9f2efe48a98254d668d235f3c8488a2b, type: 3}
+  clicksForFullChoir: 20
+  measureWindow: 2
+  screamVolume: 0.6
+  fadeSpeed: 3
+--- !u!4 &738655193
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738655191}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &744793122
 GameObject:
   m_ObjectHideFlags: 0
@@ -10067,3 +10126,4 @@ SceneRoots:
   - {fileID: 1406060094}
   - {fileID: 1045728099}
   - {fileID: 1272531999}
+  - {fileID: 738655193}

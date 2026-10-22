@@ -29,6 +29,9 @@ public class UpgradeButton : MonoBehaviour, IPointerClickHandler, IPointerEnterH
     // The spawner that reacts to purchases (drag the floor here).
     public CharacterSpawner spawner;
 
+    // How many extra screams the choir gets when this room is unlocked.
+    public int screamsAdded = 1;
+
     // Optional: small text on the button showing the price and souls owned.
     public TMP_Text priceText;
 
