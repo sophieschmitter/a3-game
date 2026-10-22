@@ -976,6 +976,54 @@ MonoBehaviour:
   edgePadding: 60
   maxVisibleSouls: 15
   scrollTime: 0.6
+--- !u!1 &299935599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 299935601}
+  - component: {fileID: 299935600}
+  m_Layer: 0
+  m_Name: ClickSounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &299935600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299935599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30db4b325a4af44449aae03e67ff1eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClickSounds
+  buttonSound: {fileID: 8300000, guid: 1339e6fa917c443c8a54e39ed4be6693, type: 3}
+  painButtonSound: {fileID: 0}
+  buttonVolume: 0.7
+  painButtonVolume: 0.7
+--- !u!4 &299935601
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299935599}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &315439414
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,6 +1104,7 @@ MonoBehaviour:
   unlockedSprite: {fileID: 0}
   target: {fileID: 2106834649}
   spawner: {fileID: 2095807700}
+  screamsAdded: 1
   priceText: {fileID: 671042412}
   frame: {fileID: 0}
   frameHoverSprite: {fileID: 9010591814348184138, guid: 68c0196dad82e487ea38d19b67770b50, type: 3}
@@ -1841,6 +1890,7 @@ MonoBehaviour:
   unlockedSprite: {fileID: 0}
   target: {fileID: 374893809}
   spawner: {fileID: 206882512}
+  screamsAdded: 1
   priceText: {fileID: 681848440}
   frame: {fileID: 0}
   frameHoverSprite: {fileID: -1139055620649948028, guid: 68c0196dad82e487ea38d19b67770b50, type: 3}
@@ -3055,6 +3105,7 @@ MonoBehaviour:
   unlockedSprite: {fileID: 0}
   target: {fileID: 2081080759}
   spawner: {fileID: 509208300}
+  screamsAdded: 1
   priceText: {fileID: 948095531}
   frame: {fileID: 0}
   frameHoverSprite: {fileID: 9010591814348184138, guid: 68c0196dad82e487ea38d19b67770b50, type: 3}
@@ -3247,9 +3298,14 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8007f37848c17496390eeb642ec1f047, type: 3}
   - {fileID: 8300000, guid: 9f2efe48a98254d668d235f3c8488a2b, type: 3}
   clicksForFullChoir: 20
-  measureWindow: 2
-  screamVolume: 0.6
-  fadeSpeed: 3
+  measureWindow: 1
+  screamVolume: 0.8
+  fullChoirVolume: 1
+  fadeSpeed: 2
+  startingScreams: 1
+  pitchVariation: 0.08
+  voiceSpread: 0.1
+  overlap: 0.3
 --- !u!4 &738655193
 Transform:
   m_ObjectHideFlags: 0
@@ -3326,6 +3382,7 @@ MonoBehaviour:
   unlockedSprite: {fileID: 0}
   target: {fileID: 2029090830}
   spawner: {fileID: 426540637}
+  screamsAdded: 1
   priceText: {fileID: 808156991}
   frame: {fileID: 0}
   frameHoverSprite: {fileID: -2282764274571179939, guid: 68c0196dad82e487ea38d19b67770b50, type: 3}
@@ -3484,6 +3541,7 @@ MonoBehaviour:
   unlockedSprite: {fileID: 0}
   target: {fileID: 589914414}
   spawner: {fileID: 1666627861}
+  screamsAdded: 1
   priceText: {fileID: 1244179117}
   frame: {fileID: 0}
   frameHoverSprite: {fileID: -5705296614934127918, guid: 68c0196dad82e487ea38d19b67770b50, type: 3}
@@ -4352,6 +4410,7 @@ MonoBehaviour:
   unlockedSprite: {fileID: 0}
   target: {fileID: 1607719084}
   spawner: {fileID: 804627698}
+  screamsAdded: 1
   priceText: {fileID: 1877073800}
   frame: {fileID: 0}
   frameHoverSprite: {fileID: 1748284863852305862, guid: 68c0196dad82e487ea38d19b67770b50, type: 3}
@@ -6295,6 +6354,7 @@ MonoBehaviour:
   unlockedSprite: {fileID: 0}
   target: {fileID: 1991602966}
   spawner: {fileID: 1169704817}
+  screamsAdded: 1
   priceText: {fileID: 1362119089}
   frame: {fileID: 0}
   frameHoverSprite: {fileID: -2111341227379695684, guid: 68c0196dad82e487ea38d19b67770b50, type: 3}
@@ -6572,6 +6632,7 @@ MonoBehaviour:
   unlockedSprite: {fileID: 0}
   target: {fileID: 1571071313}
   spawner: {fileID: 253104850}
+  screamsAdded: 1
   priceText: {fileID: 818717154}
   frame: {fileID: 0}
   frameHoverSprite: {fileID: 9010591814348184138, guid: 68c0196dad82e487ea38d19b67770b50, type: 3}
@@ -6692,6 +6753,7 @@ MonoBehaviour:
   unlockedSprite: {fileID: 0}
   target: {fileID: 797663862}
   spawner: {fileID: 2146070123}
+  screamsAdded: 1
   priceText: {fileID: 1588966678}
   frame: {fileID: 0}
   frameHoverSprite: {fileID: -2282764274571179939, guid: 68c0196dad82e487ea38d19b67770b50, type: 3}
@@ -7667,6 +7729,7 @@ MonoBehaviour:
   unlockedSprite: {fileID: 0}
   target: {fileID: 322528927}
   spawner: {fileID: 942008216}
+  screamsAdded: 1
   priceText: {fileID: 973671238}
   frame: {fileID: 0}
   frameHoverSprite: {fileID: -204072596816088884, guid: 68c0196dad82e487ea38d19b67770b50, type: 3}
@@ -7953,6 +8016,7 @@ MonoBehaviour:
   unlockedSprite: {fileID: 0}
   target: {fileID: 1158652973}
   spawner: {fileID: 1694770706}
+  screamsAdded: 1
   priceText: {fileID: 1522801475}
   frame: {fileID: 0}
   frameHoverSprite: {fileID: -5705296614934127918, guid: 68c0196dad82e487ea38d19b67770b50, type: 3}
@@ -10127,3 +10191,4 @@ SceneRoots:
   - {fileID: 1045728099}
   - {fileID: 1272531999}
   - {fileID: 738655193}
+  - {fileID: 299935601}

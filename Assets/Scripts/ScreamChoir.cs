@@ -53,12 +53,16 @@ public class ScreamChoir : MonoBehaviour
 
     private void Start()
     {
-        voices[i] = new Voice
+        voices = new Voice[screams.Length];
+        for (int i = 0; i < screams.Length; i++)
         {
-            a = MakeSpeaker(),
-            b = MakeSpeaker(),
-            basePitch = 1f + Random.Range(-voiceSpread, voiceSpread)
-        };
+            voices[i] = new Voice
+            {
+                a = MakeSpeaker(),
+                b = MakeSpeaker(),
+                basePitch = 1f + Random.Range(-voiceSpread, voiceSpread)
+            };
+        }
 
         // Find every room upgrade, even while the shop is closed.
         rooms = FindObjectsByType<UpgradeButton>(FindObjectsInactive.Include, FindObjectsSortMode.None);
