@@ -166,12 +166,12 @@ TextureImporter:
       name: Victim Sprite Sheet 1_0
       rect:
         serializedVersion: 2
-        x: 1964
-        y: 494
-        width: 362
-        height: 452
+        x: 1962
+        y: 492
+        width: 366
+        height: 456
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -188,12 +188,12 @@ TextureImporter:
       name: Victim Sprite Sheet 1_1
       rect:
         serializedVersion: 2
-        x: 2459
-        y: 494
-        width: 347
-        height: 452
+        x: 2457
+        y: 492
+        width: 351
+        height: 456
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -210,12 +210,12 @@ TextureImporter:
       name: Victim Sprite Sheet 1_2
       rect:
         serializedVersion: 2
-        x: 2804
-        y: 869
-        width: 17
-        height: 17
+        x: 2802
+        y: 867
+        width: 21
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -232,12 +232,12 @@ TextureImporter:
       name: Victim Sprite Sheet 1_3
       rect:
         serializedVersion: 2
-        x: 2909
-        y: 494
-        width: 407
-        height: 407
+        x: 2907
+        y: 492
+        width: 411
+        height: 411
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -254,12 +254,12 @@ TextureImporter:
       name: Victim Sprite Sheet 1_4
       rect:
         serializedVersion: 2
-        x: 3389
-        y: 494
-        width: 407
-        height: 407
+        x: 3387
+        y: 492
+        width: 411
+        height: 411
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -276,12 +276,12 @@ TextureImporter:
       name: Victim Sprite Sheet 1_5
       rect:
         serializedVersion: 2
-        x: 14
-        y: 494
-        width: 212
-        height: 317
+        x: 12
+        y: 492
+        width: 216
+        height: 321
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -298,12 +298,12 @@ TextureImporter:
       name: Victim Sprite Sheet 1_6
       rect:
         serializedVersion: 2
-        x: 254
-        y: 494
-        width: 212
-        height: 302
+        x: 252
+        y: 492
+        width: 216
+        height: 306
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -320,12 +320,12 @@ TextureImporter:
       name: Victim Sprite Sheet 1_7
       rect:
         serializedVersion: 2
-        x: 494
-        y: 494
-        width: 227
-        height: 317
+        x: 492
+        y: 492
+        width: 231
+        height: 321
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -342,12 +342,12 @@ TextureImporter:
       name: Victim Sprite Sheet 1_8
       rect:
         serializedVersion: 2
-        x: 734
-        y: 494
-        width: 212
-        height: 302
+        x: 732
+        y: 492
+        width: 216
+        height: 306
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -364,12 +364,12 @@ TextureImporter:
       name: Victim Sprite Sheet 1_9
       rect:
         serializedVersion: 2
-        x: 974
-        y: 494
-        width: 212
-        height: 317
+        x: 972
+        y: 492
+        width: 216
+        height: 321
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -386,12 +386,12 @@ TextureImporter:
       name: Victim Sprite Sheet 1_10
       rect:
         serializedVersion: 2
-        x: 1214
-        y: 494
-        width: 212
-        height: 302
+        x: 1212
+        y: 492
+        width: 216
+        height: 306
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -408,12 +408,12 @@ TextureImporter:
       name: Victim Sprite Sheet 1_11
       rect:
         serializedVersion: 2
-        x: 1454
-        y: 494
-        width: 212
-        height: 317
+        x: 1452
+        y: 492
+        width: 216
+        height: 321
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -430,12 +430,12 @@ TextureImporter:
       name: Victim Sprite Sheet 1_12
       rect:
         serializedVersion: 2
-        x: 1694
-        y: 494
-        width: 212
-        height: 302
+        x: 1692
+        y: 492
+        width: 216
+        height: 306
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -452,12 +452,12 @@ TextureImporter:
       name: Victim Sprite Sheet 1_13
       rect:
         serializedVersion: 2
-        x: 44
-        y: 14
-        width: 152
-        height: 257
+        x: 42
+        y: 12
+        width: 156
+        height: 261
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -474,12 +474,12 @@ TextureImporter:
       name: Victim Sprite Sheet 1_14
       rect:
         serializedVersion: 2
-        x: 284
-        y: 14
-        width: 152
-        height: 242
+        x: 282
+        y: 12
+        width: 156
+        height: 246
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -496,12 +496,12 @@ TextureImporter:
       name: Victim Sprite Sheet 1_15
       rect:
         serializedVersion: 2
-        x: 494
-        y: 14
-        width: 212
-        height: 437
+        x: 492
+        y: 12
+        width: 216
+        height: 441
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -518,12 +518,12 @@ TextureImporter:
       name: Victim Sprite Sheet 1_16
       rect:
         serializedVersion: 2
-        x: 734
-        y: 14
-        width: 212
-        height: 422
+        x: 732
+        y: 12
+        width: 216
+        height: 426
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -540,13 +540,13 @@ TextureImporter:
       name: Victim Sprite Sheet 1_17
       rect:
         serializedVersion: 2
-        x: 959
-        y: 14
-        width: 482
-        height: 467
+        x: 1201
+        y: 7
+        width: 242
+        height: 471
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 242, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -562,12 +562,12 @@ TextureImporter:
       name: Victim Sprite Sheet 1_18
       rect:
         serializedVersion: 2
-        x: 1994
-        y: 14
-        width: 347
-        height: 467
+        x: 1992
+        y: 12
+        width: 351
+        height: 471
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -584,12 +584,12 @@ TextureImporter:
       name: Victim Sprite Sheet 1_19
       rect:
         serializedVersion: 2
-        x: 2474
-        y: 14
-        width: 347
-        height: 452
+        x: 2472
+        y: 12
+        width: 351
+        height: 456
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -606,12 +606,12 @@ TextureImporter:
       name: Victim Sprite Sheet 1_20
       rect:
         serializedVersion: 2
-        x: 2909
-        y: 14
-        width: 437
-        height: 437
+        x: 2907
+        y: 12
+        width: 441
+        height: 441
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -628,12 +628,12 @@ TextureImporter:
       name: Victim Sprite Sheet 1_21
       rect:
         serializedVersion: 2
-        x: 3389
-        y: 14
-        width: 437
-        height: 437
+        x: 3387
+        y: 12
+        width: 441
+        height: 441
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -646,11 +646,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Victim Sprite Sheet 1_22
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 7
+        width: 245
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583bb288a7cc64c46854e6b4fb7aa250
+      internalID: -1055910758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1a4d2546c232542949854cd52fbf750d
     internalID: 0
     vertices: []
     indices: 
@@ -658,7 +680,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Victim Sprite Sheet 1_0: 8751786801006748116
       Victim Sprite Sheet 1_1: 3942546794807845608
@@ -675,6 +699,7 @@ TextureImporter:
       Victim Sprite Sheet 1_2: 125204546276430655
       Victim Sprite Sheet 1_20: -6837629284723938887
       Victim Sprite Sheet 1_21: 7715225652175198115
+      Victim Sprite Sheet 1_22: -1055910758
       Victim Sprite Sheet 1_3: -5186743571887574147
       Victim Sprite Sheet 1_4: 5805362809644101158
       Victim Sprite Sheet 1_5: -6026152807968209654
