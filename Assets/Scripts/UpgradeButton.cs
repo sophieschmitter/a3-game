@@ -11,6 +11,9 @@ public class UpgradeButton : MonoBehaviour, IPointerClickHandler, IPointerEnterH
     // The upgrade that must be bought before this one. Leave empty for the first one.
     public UpgradeButton requires;
 
+    // For the final room: every OTHER room must be bought at least this many times first. 0 = no rule.
+    public int needsAllRoomsBought = 0;
+
     // Pain needed for the NEXT purchase. Goes up every time you buy.
     public int cost = 100;
 
@@ -45,15 +48,36 @@ public class UpgradeButton : MonoBehaviour, IPointerClickHandler, IPointerEnterH
     private Sprite frameNormalSprite;
     private int timesPurchased = 0;
     private bool isHovered = false;
+    private UpgradeButton[] allRooms;
 
     // True once this upgrade has been bought at least once.
     public bool HasBeenBought => timesPurchased > 0;
 
-    // True when the previous upgrade has been bought (or there isn't one).
-    public bool IsAvailable => requires == null || requires.HasBeenBought;
+    // How many times this upgrade has been bought (other scripts can read this).
+    public int TimesPurchased => timesPurchased;
+
+    // True when the previous upgrade has been bought AND (for the final room) every room has enough purchases.
+    public bool IsAvailable => (requires == null || requires.HasBeenBought) && AllOtherRoomsBought(needsAllRoomsBought);
 
     // True when the player can buy this right now: available AND affordable.
     public bool IsUnlocked => IsAvailable && Clickable.Pain >= cost;
+
+    // Has every OTHER room been bought at least this many times?
+    public bool AllOtherRoomsBought(int times)
+    {
+        if (times <= 0) return true;
+
+        if (allRooms == null)
+        {
+            allRooms = FindObjectsByType<UpgradeButton>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        }
+
+        foreach (UpgradeButton room in allRooms)
+        {
+            if (room != this && room.TimesPurchased < times) return false;
+        }
+        return true;
+    }
 
     private void Awake()
     {
@@ -114,8 +138,16 @@ public class UpgradeButton : MonoBehaviour, IPointerClickHandler, IPointerEnterH
 
         if (!IsAvailable)
         {
-            // The previous upgrade hasn't been bought yet.
-            priceText.text = "Locked";
+            if ((requires == null || requires.HasBeenBought) && needsAllRoomsBought > 0)
+            {
+                // Chain is done, but not every room has enough purchases yet.
+                priceText.text = "Needs " + needsAllRoomsBought + "x\nevery room";
+            }
+            else
+            {
+                // The previous upgrade hasn't been bought yet.
+                priceText.text = "Locked";
+            }
         }
         else if (timesPurchased == 0)
         {
