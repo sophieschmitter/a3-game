@@ -1,14 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class UpgradeButton : MonoBehaviour, IPointerClickHandler
 {
     // Name shown in Console messages. Set it per button.
     public string upgradeName = "Upgrade";
 
-    // Pain needed to unlock this button, and the amount spent when clicked.
+    // Pain needed for the NEXT purchase. Goes up every time you buy.
     public int cost = 100;
+
+    // How much the price grows after each purchase (1.15 = 15% more each time).
+    public float priceGrowth = 1.15f;
 
     // Solid color shown while locked.
     public Color lockedColor = Color.grey;
@@ -22,10 +26,13 @@ public class UpgradeButton : MonoBehaviour, IPointerClickHandler
     // The spawner that reacts to purchases (drag the floor here).
     public CharacterSpawner spawner;
 
+    // Optional: small text on the button showing the price and souls owned.
+    public TMP_Text priceText;
+
     private Sprite originalSprite;
     private int timesPurchased = 0;
 
-    // Public so UpgradeTooltip can read it.
+    // True when the player has enough pain to buy this.
     public bool IsUnlocked => Clickable.Pain >= cost;
 
     private void Awake()
@@ -57,6 +64,24 @@ public class UpgradeButton : MonoBehaviour, IPointerClickHandler
             target.sprite = originalSprite;
             target.color = lockedColor;
         }
+
+        UpdatePriceText();
+    }
+
+    private void UpdatePriceText()
+    {
+        if (priceText == null) return;
+
+        if (timesPurchased == 0)
+        {
+            // Not bought yet: the first purchase unlocks the room.
+            priceText.text = "Unlock\n" + cost + " pain";
+        }
+        else
+        {
+            // The first purchase only unlocked the room, so souls = purchases - 1.
+            priceText.text = cost + " pain\n" + (timesPurchased - 1) + " souls";
+        }
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -68,6 +93,9 @@ public class UpgradeButton : MonoBehaviour, IPointerClickHandler
 
         Clickable.Pain -= cost;
         timesPurchased += 1;
+
+        // Raise the price for next time. CeilToInt rounds UP to a whole number.
+        cost = Mathf.CeilToInt(cost * priceGrowth);
 
         if (spawner != null)
         {
